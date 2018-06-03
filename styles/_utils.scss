@@ -1,0 +1,28 @@
+$grey:#f3f3f3;
+$transparentGrey: rgba(243, 243, 243, 0.9);
+$white: #ffffff;
+$black: #1d1d1f; 
+$gold: #e29e29;
+
+.wrapper {
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+@mixin fontSize ($sizeValue) {
+    font-size: $sizeValue * 1px;
+    font-size: $sizeValue/10 * 1rem;
+}
+
+.skip-link {
+  color: #000;
+  background: #FFF;
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999; 
+}
+
+.skip-link:focus {
+  left: 0; 
+}

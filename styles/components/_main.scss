@@ -1,0 +1,127 @@
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+h2 {
+    text-align: center;
+    @include fontSize(40);
+    text-transform: uppercase;
+}
+
+h2 span {
+    @include fontSize(18)
+    background: url(../images/line.png) no-repeat 0 bottom;
+    padding: 0 49px 0 0;
+    line-height: 1.6;
+}
+
+.skillsList {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-basis: 75px;
+}
+
+.skillsItem {
+    text-align: center;
+}
+
+.devicon-html5-plain,
+.devicon-css3-plain,
+.devicon-jquery-plain,
+.devicon-javascript-plain,
+.devicon-react-original {
+    @include fontSize(60);
+    display: block;
+    -webkit-transition: color .1s linear;
+    transition: color .1s linear;
+        &:hover {
+            color: $gold;
+        }
+}
+
+.row {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.boldText {
+    @include fontSize(20);
+    font-weight: 500;
+    text-align: right;
+    line-height: 1.5;
+    margin-right: 25px;
+}
+
+.lightText {
+    @include fontSize(16);
+    font-weight: 200;
+    text-align: left;
+    line-height: 1.75;
+    margin-right: 10px;
+}
+
+.resumeButton {
+    text-align: center;
+        .resume {
+            text-decoration: none;
+            background: transparent;
+            border: solid 1px $gold;
+            color: $gold;
+            padding: 8px 53px;
+            letter-spacing: 1.5px;
+            -webkit-transition: background-color .1s linear, color .1s linear;
+            transition: background-color .1s linear, color .1s linear;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            @include fontSize(16);
+                &:hover {
+                    background: $gold;
+                    color: $white;
+                }
+        }
+}
+
+
+    @media screen and (max-width: 800px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .boldText {
+        text-align: left;
+    }
+}
+
+#portfolio {
+    background-color: $grey;
+}
+
+.bottomTriangle {
+    background-image: url("../images/top_bg.png");
+    height: 100vh;
+    background-size: 100vw auto;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+// #portfolio,
+// .bottomBackground {
+//     background-size: 100vw auto;
+//     background-repeat: no-repeat;
+// }
+
+// #portfolio {
+//     background-image: url("../images/body_bg.png");
+// }
+
+// .bottomBackground {
+//     background-image: url("../images/bg_lower.png");
+//     background-position: top;
+//     height: 100vh;
+// }
+

@@ -1,0 +1,20 @@
+footer {
+    background-color: $grey;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fa-arrow-up {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    color: $black;
+        &:hover {
+            color: $gold;
+            -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+        }
+}
+
