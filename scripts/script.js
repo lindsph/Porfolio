@@ -52,18 +52,25 @@ $(function() {
         }
     };
 
-    $(document).ready(function () {
-        $input = $('.input__field');
+    $input = $('.inputField');
 
-        // in case there is any value already
-        $input.each(function () {
-            if ($input.val().trim() !== '') {
-                const $parent = $input.parent();
-                $parent.addClass('input--filled');
-            }
-        });
+    // in case there is any value already
+    $input.each(function () {
+        if ($input.val().trim() !== '') {
+            const $parent = $input.parent();
+            $parent.addClass('input--filled');
+        }
 
-        $input.on('focus', onInputFocus);
-        $input.on('blur', onInputBlur);
+
+    $input.on('focus', onInputFocus);
+    $input.on('blur', onInputBlur);
+    });
+    // end of form 
+
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        $(".diagonal-bg svg line").attr("stroke-width", ((30 + scroll / 50) + "%"));
+        //30 is the starting width
+        //alter the amount of growth by changing scroll/x
     });
 });

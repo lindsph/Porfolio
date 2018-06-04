@@ -158,16 +158,11 @@ body {
 
 footer {
   background-color: #f3f3f3;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
+  text-align: center; }
+
+footer p {
+  margin: 0;
+  padding: 0; }
 
 .fa-arrow-up {
   transition: all 0.3s ease-in-out;
@@ -186,11 +181,70 @@ footer {
     -ms-transform: scale(1.5); }
 
 header {
-  height: 100vh;
-  background-image: url("../images/top_bg.png");
-  background-size: cover;
-  background-position: bottom;
-  background-repeat: no-repeat; }
+  height: 100vh; }
+
+.diagonal-bg {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%; }
+
+.arrows {
+  width: 60px;
+  height: 72px;
+  position: absolute;
+  left: 50%;
+  bottom: 20px; }
+
+.arrows path {
+  stroke: #e29e29;
+  fill: transparent;
+  stroke-width: 1px;
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite; }
+
+@-webkit-keyframes arrow {
+  0% {
+    opacity: 0; }
+  40% {
+    opacity: 1; }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@keyframes arrow {
+  0% {
+    opacity: 0; }
+  40% {
+    opacity: 1; }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@-webkit-keyframes {
+  0% {
+    opacity: 0; }
+  40% {
+    opacity: 1; }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+.arrows path.a1 {
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s; }
+
+.arrows path.a2 {
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s; }
+
+.arrows path.a3 {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s; }
 
 .stickyHeader {
   width: 100%;
@@ -317,7 +371,7 @@ span.bold {
 span.top,
 span.middle,
 span.bottom {
-  background: #1d1d1f;
+  background: #e29e29;
   border: none;
   height: 2px;
   width: 85%;
@@ -424,15 +478,6 @@ ul {
   font-size: 25px;
   font-size: 2.5rem; }
 
-.goldHover {
-  transition: all 0.5 ease-in-out;
-  -webkit-transition: all 0.5 ease-in-out;
-  -moz-transition: all 0.5 ease-in-out;
-  -o-transition: all 0.5 ease-in-out;
-  -ms-transition: all 0.5 ease-in-out; }
-  .goldHover:hover {
-    color: #e29e29; }
-
 @-webkit-keyframes fadeInRight {
   0% {
     opacity: 0;
@@ -462,7 +507,8 @@ h2 {
   text-align: center;
   font-size: 40px;
   font-size: 4rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-bottom: 100px; }
 
 h2 span {
   font-size: 18px;
@@ -560,15 +606,28 @@ h2 span {
       background: #e29e29;
       color: #ffffff; }
 
-#portfolio {
-  background-color: #f3f3f3; }
+#portfolio img {
+  width: 100%;
+  max-width: 500px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding-top: 25px; }
 
-.bottomTriangle {
-  background-image: url("../images/top_bg.png");
-  height: 100vh;
-  background-size: 100vw auto;
-  background-position: bottom;
-  background-repeat: no-repeat; }
+.links {
+  text-align: center; }
+
+h3 {
+  font-size: 30px;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 0;
+  text-align: center; }
+
+div.project p {
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  font-size: 14px; }
 
 h4,
 h5 {
@@ -670,7 +729,8 @@ textarea {
   transition: -webkit-transform 0.3s;
   -o-transition: transform 0.3s;
   transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s; }
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  font-weight: 200; }
 
 .inputLabel:before,
 .inputLabel:after {
@@ -707,7 +767,9 @@ textarea {
   -webkit-transform: translate3d(0, 0.5rem, 0);
   transform: translate3d(0, 0.5rem, 0); }
 
-.sendMessage {
+.sendMessage,
+a.live,
+a.git {
   background: transparent;
   border: solid 1px #e29e29;
   color: #e29e29;
@@ -732,9 +794,20 @@ textarea {
   margin-top: 25px;
   font-size: 16px;
   font-size: 1.6rem; }
-  .sendMessage:hover {
+  .sendMessage:hover,
+  a.live:hover,
+  a.git:hover {
     background: #e29e29;
     color: #ffffff; }
+
+a.live,
+a.git {
+  text-decoration: none;
+  padding-right: 25px;
+  padding-left: 25px; }
+
+a.live {
+  margin-right: 25px; }
 
 @media screen and (max-width: 1000px) {
   form {

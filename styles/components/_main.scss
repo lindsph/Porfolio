@@ -9,6 +9,7 @@ h2 {
     text-align: center;
     @include fontSize(40);
     text-transform: uppercase;
+    margin-bottom: 100px;
 }
 
 h2 span {
@@ -94,33 +95,59 @@ h2 span {
 
 // portfolio section styling begins
 
-#portfolio {
-    background-color: $grey;
+#portfolio img {
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-top: 25px;
 }
 
-.bottomTriangle {
-    background-image: url("../images/top_bg.png");
-    height: 100vh;
-    background-size: 100vw auto;
-    background-position: bottom;
-    background-repeat: no-repeat;
+.links {
+    text-align: center;
 }
 
-// #portfolio,
-// .bottomBackground {
-//     background-size: 100vw auto;
-//     background-repeat: no-repeat;
+h3 {
+    @include fontSize(30);
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 0;
+    text-align: center;
+}
+
+div.project p {
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+}
+
+// .myWork {
+//     display: flex;
 // }
 
-// #portfolio {
-//     background-image: url("../images/body_bg.png");
+// .column1 {
+//     margin-right: 10vw;
 // }
 
-// .bottomBackground {
-//     background-image: url("../images/bg_lower.png");
-//     background-position: top;
-//     height: 100vh;
+// #tacoBoutIt {
+//     margin-top: 60vh;
 // }
+
+// .right, 
+// .left {
+//     text-align: center;
+// }
+
+// #astroAtlas {
+//     margin-bottom: 25vh;
+//         &:hover {
+//             cursor: url("../images/meteorIcon.png"), auto;
+//         }
+// }
+
+// // #astroAtlas .right:hover {
+// //     cursor: url("../images/meteorIcon.png)") 20 20, auto;
+// // }
 
 // portfolio section styling ends
 
@@ -227,6 +254,7 @@ textarea {
     width: 100%;
     -webkit-transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
+    font-weight: 200;
 }
 
 .inputLabel:before,
@@ -267,7 +295,9 @@ textarea {
     transform: translate3d(0, 0.5rem, 0);
 }
 
-.sendMessage {
+.sendMessage,
+a.live,
+a.git {
     background: transparent;
     border: solid 1px $gold;
     color: $gold;
@@ -289,8 +319,16 @@ textarea {
         }
 }
 
+a.live,
+a.git {
+    text-decoration: none;
+    padding-right: 25px;
+    padding-left: 25px;
+}
 
-
+a.live {
+    margin-right: 25px;
+}
 
 // contact section styling ends
 

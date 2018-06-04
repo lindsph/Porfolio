@@ -21,6 +21,11 @@
     <a href="#linktotop" id="target"></a>
     <!-- HEADER STARTS HERE -->
     <header>
+        <div class="diagonal-bg">
+            <svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'>
+                <line x1='100%' y1='0' x2='1' y2='100%' stroke='#F3f3f3' stroke-width='30%' />
+            </svg>
+        </div>
         <div class="navigation">
             <div class="logo">
                 <img src="images/LPH/LPH_logo-gold.png" alt="Lindsay Power-Harding Logo" class="lph">
@@ -72,11 +77,16 @@
                     Lindsay<br><span class="bold">Power-Harding</span>
                 </p>
                 <div class="typeIt">
-                    <a href="#about" class="goldHover">
-                        <p class="type-it"></p>
-                    </a>
+                    <p class="type-it"></p>
                 </div>
                 <!-- end of div.typeIt -->
+                <svg class="arrows">
+                    <a href="#about">
+                        <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                        <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                        <path class="a3" d="M0 40 L30 72 L60 40"></path>
+                    </a>
+                </svg>
             </div>
             <!-- end of div.wrapper -->
         </div>
@@ -120,7 +130,7 @@
                         I have been a soldier, a Bay Street banker, and sky diver. I work hard to incorporate that same sense of adventure, team-focused approach, and attention to detail into my projects. I love tackling new coding challenges and the “aha!” moments when everything falls into place. 
                     </div>
                     <div class="lightText">
-                        The collaborative nature of development, and the endless opportunities for learning, are all things that have drawn me to this career.When I’m not coding (aka flexing my brain), you can find me picking up heavy things and putting them down, on a hiking trail, or bingeing the latest Netflix series and trying to maintain a healthy balance between pizza and salads.
+                        The collaborative nature of development, and the endless opportunities for learning, are all things that have drawn me to this career. When I’m not coding (aka flexing my brain), you can find me picking up heavy things and putting them down, on a hiking trail, or bingeing the latest Netflix series and trying to maintain a healthy balance between pizza and salads.
                     </div>
                 </div>
                 <div class="resumeButton">
@@ -131,81 +141,98 @@
         </section>
         <!-- end of section ID about -->
 
-        <div class="topTriangle"></div>
-
         <!-- section of ID portfolio begins -->
         <section id="portfolio">
+            <h2>
+                <span>02</span>
+                <br>
+                <br> Portfolio
+            </h2>
             <div class="myWork wrapper">
-                <h2>
-                    <span>02</span>
-                    <br>
-                    <br> Portfolio
-                </h2>
-            </div>
-            <!-- end of myWork wrapper div -->
-            <div class="columnOne">
-                <div class="projectTwo">
-                    <div class="projectImage">
-                        <a href="http://www.carolynmcneillie.com/colours/ " target="_blank ">
-                            <!-- <img src="images/SimpleFlex.jpeg" alt="Preview of SimpleFlex Project"> -->
-                        </a>
+                <div class="column1">
+                    <div class="project dontWantToTacoBoutIt" id="tacoBoutIt">
+                        <div class="left">
+                            <a href="https://kweensofcode.github.io/HY-Project4/" target="_blank ">
+                            <img src="images/Tacoboutit.png" alt="Preview of I Don't Wanna Taco 'Bout It Project'">
+                            </a>
+                        </div>
+                        <!-- end of div.left -->
+                        <div class="right">
+                            <div class="projectText">
+                                <h3>I Don't Wanna Taco 'Bout It</h3>
+                                <div class="links">
+                                    <a href="https://kweensofcode.github.io/HY-Project4/" target="_blank " class="live">View Live</a>
+                                    <a href="https://github.com/lindsph/HY-Project4" target="_blank " class="git">View on GitHub</a>
+                                </div>
+                                <!-- end of div.links -->
+                                <p>I Don't Wanna Taco 'Bout It uses the Dandelion API for Semantic Text Analysis of the user's responses and the Zomato API to provide restaurant recommendations. It considers the user's cumulative sentiment score to present the user with recommendations of Mexican restaurants within a specific price range in a specific locality.</p>
+                                <p>Pair Programming / HTML / CSS / JavaScript</p>
+                            </div>
+                            <!-- end of div.projectText -->
+                        </div>
+                        <!-- end of div.right -->
                     </div>
-                    <!-- end of div.projectImage -->
-                    <h3>I Don't Wanna Taco 'Bout It</h3>
-                    <p class="projectLinks">
-                        <a href="http://www.carolynmcneillie.com/colours/ " target="_blank ">View Live</a>
-                        <a href="https://github.com/lindsph/HY-Project4" target="_blank ">View on GitHub</a>
-                    </p>
-                    <ul class="projectTools">
-                        <li>Pair Programming</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                    </ul>
-                    <div class="projectDescription">
-                        <p>I Don't Wanna Taco 'Bout It uses the Dandelion API for Semantic Text Analysis of the user's responses and the Zomato API to provide restaurant recommendations. It considers the user's cumulative sentiment score to present the user with recommendations of Mexican restaurants within a specific price range in a specific locality.</p>
-                    </div>
-                    <!-- end of div.projectDescription -->
+                    <!-- end of div.dontWantToTacoBoutIt -->
                 </div>
-                <!-- end of div.projectTwo -->
-            </div>
-            <!-- end of div.columnOne -->
-            <div class="columnTwo">
-                <div class="projectThree">
-                    <div class="projectImage">
-                        <a href="http://www.carolynmcneillie.com/colours/ " target="_blank ">
-                            <!-- <img src="images/SimpleFlex.jpeg" alt="Preview of SimpleFlex Project"> -->
-                        </a>
+                <!-- end of div.column1 -->
+                <div class="column2">
+                    <div class="project astroAtlas" id="astroAtlas">
+                            <div class="right">
+                                <a href="https://astroatlas-c22d6.firebaseapp.com/" target="_blank ">
+                                    <img src="images/AstroAltas.png" alt="Preview of AstroAtlas Project">
+                                </a>
+                            </div>
+                            <!-- end of div.right -->
+                            <div class="left">
+                                <div class="projectText">
+                                    <h3>Astro Atlas</h3>
+                                    <div class="links">
+                                        <a href="https://astroatlas-c22d6.firebaseapp.com/" target="_blank " class="live">View Live</a>
+                                        <a href="https://github.com/HY-MeteorLandings/AstroAtlas" target="_blank " class="git">View on GitHub</a>
+                                    </div>
+                                    <!-- end of div.links -->
+                                    <p>Astro Atlas is a group project which required the 3 of us to collaborate through Github. Working from the brief, we utilized the NASA Meteorite API to map meteor landings using Mapbox.</p>
+                                    <p>Team Programming / JavaScript / React</p>
+                                </div>
+                                <!-- end of div.projectText -->
+                            </div>
+                            <!-- end of div.left -->
                     </div>
-                    <!-- end of div.projectImage -->
-                    <h3>Astro Atlas</h3>
-                    <p class="projectLinks">
-                        <a href="http://www.carolynmcneillie.com/colours/ " target="_blank ">View Live</a>
-                        <a href="https://github.com/lindsph/HY-Project4" target="_blank ">View on GitHub</a>
-                    </p>
-                    <ul class="projectTools">
-                        <li>Team Programming</li>
-                        <li>JavaScript</li>
-                        <li>React</li>
-                    </ul>
-                    <div class="projectDescription">
-                        <p>Astro Atlas is a group project which required the 3 of us to collaborate through Github. Working from the brief, we utilized the NASA Meteorite API to map meteor landings using Mapbox.
-                        </p>
+                    <!-- end of div.astroAtlas -->
+                    <div class="project simpleFlex" id="simplePSD">
+                        <div class="left">
+                            <a href="http://lindsaypowerharding.com/simpleflex/" target="_blank ">
+                                <img src="images/SimpleFlex.png" alt="Preview of SimpleFlex Project">
+                            </a>
+                        </div>
+                        <!-- end of div.left -->
+                        <div class="right">
+                            <div class="projectText">
+                                <h3>PSD Conversion</h3>
+                                <div class="links">
+                                    <a href="http://lindsaypowerharding.com/simpleflex/" target="_blank " class="live">View Live</a>
+                                    <a href="https://github.com/lindsph/simpleFlex" target="_blank " class="git">View on GitHub</a>
+                                </div>
+                                <!-- end of div.links -->
+                                <p>SimpleFlex is a fully responsive PSD conversion of a corporate website.</p>
+                                <p>HTML / CSS / jQuery / Responsive Design</p>
+                            </div>
+                            <!-- end of div.projectText -->
+                        </div>
+                        <!-- end of div.right -->
                     </div>
-                    <!-- end of div.projectDescription -->
+                    <!-- end of div.simpleFlex -->
                 </div>
-                <!-- end of div.projectThree -->
+                <!-- end of div.column2 -->
             </div>
-            <!-- end of div.columnTwo -->
+            <!-- end of div.myWork -->
         </section>
         <!-- section of ID portfolio ends -->
-
-        <div class="bottomTriangle"></div>
 
         <!-- section of ID contact begins -->
         <section id="contact">
             <h2>
-                <span>02</span>
+                <span>03</span>
                 <br>
                 <br> Contact
             </h2>
@@ -242,13 +269,12 @@
     </main>
     <!-- MAIN ENDS HERE -->
     <footer>
-        <p> © Lindsay Power-Harding 2018</p>
         <div class="backToTop">
             <a href="index.html#top">
                 <i class="fa fa-arrow-up"></i>
             </a>
         </div>
-        <p>Photo by Pam Lau</p>
+        <p> © Lindsay Power-Harding 2018</p>
     </footer>
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
