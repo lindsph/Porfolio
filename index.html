@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- fonts/stylesheet -->
-    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,400,500,800" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
     <!-- fonts/stylesheet -->
     <!-- logo - favicon -->
     <link type="image/png" href="images/LPH/favicon.png" rel="icon">
@@ -70,11 +71,12 @@
                 <p class="name">
                     Lindsay<br><span class="bold">Power-Harding</span>
                 </p>
-                <div class="linkDown">
-                    <a href="#about" class="goldHover">About Me</a>
-                    <img src="images/link.png" alt="Line" class="line">
+                <div class="typeIt">
+                    <a href="#about" class="goldHover">
+                        <p class="type-it"></p>
+                    </a>
                 </div>
-                <!-- end of div.linkDown -->
+                <!-- end of div.typeIt -->
             </div>
             <!-- end of div.wrapper -->
         </div>
@@ -202,8 +204,39 @@
 
         <!-- section of ID contact begins -->
         <section id="contact">
-
-
+            <h2>
+                <span>02</span>
+                <br>
+                <br> Contact
+            </h2>
+            <h4>Let's make something together</h4>
+            <h5>
+                <a href="mailto:hello@lindsaypowerharding.com">hello@lindsaypowerharding.com</a>
+            </h5>
+            <div class="contactForm">
+                <form action="https://formspree.io/hello@lindsaypowerharding.com" method="POST">
+                    <span class="input">
+                        <input type="text" class="inputField" id="name" required>
+                        <label for="name" class="inputLabel">
+                            <span class="inputLabel-content">Name</span>
+                        </label>
+                    </span>
+                    <span class="input">
+                        <input type="email" class="inputField" id="email" required>
+                        <label for="email" class="inputLabel">
+                            <span class="inputLabel-content">Email</span>
+                        </label>
+                    </span>
+                    <span class="input message">
+                        <textarea id="message" class="inputField"></textarea>
+                        <label for="message" class="inputLabel">
+                            <span class="inputLabel-content">Your Message</span>
+                        </label>
+                    </span>
+                    <button id="sendButton" class="sendMessage">Send Message</button>
+                </form>
+            </div>
+            <!-- end of div.contactForm -->
         </section>
         <!-- section of ID contact ends -->
     </main>
@@ -217,18 +250,14 @@
         </div>
         <p>Photo by Pam Lau</p>
     </footer>
-    <!-- <script src="js/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script> -->
-
+    <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!-- smooth scroll -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
-
-    <!-- font awesome link -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous">
+    <!-- typeit -->
+    <script src="https://cdn.jsdelivr.net/npm/typeit@5.9.0/dist/typeit.min.js" />
     </script>
-
+    <!-- external script file -->
     <script src="scripts/script.js"></script>
 </body>
 </html>

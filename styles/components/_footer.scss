@@ -7,14 +7,16 @@ footer {
 }
 
 .fa-arrow-up {
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+    @include transition(all 0.3s ease-in-out);
     cursor: pointer;
     color: $black;
         &:hover {
             color: $gold;
             -webkit-transform: scale(1.5);
             transform: scale(1.5);
+            -moz-transform: scale(1.5);
+            -o-transform: scale(1.5);
+            -ms-transform: scale(1.5);
         }
 }
 
