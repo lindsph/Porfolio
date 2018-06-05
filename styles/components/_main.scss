@@ -9,7 +9,7 @@ h2 {
     text-align: center;
     @include fontSize(40);
     text-transform: uppercase;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 h2 span {
@@ -39,6 +39,7 @@ h2 span {
     @include fontSize(60);
     display: block;
     @include transition(color .1s linear);
+    padding-right: 5px;
         &:hover {
             color: $gold;
         }
@@ -56,6 +57,7 @@ h2 span {
     text-align: right;
     line-height: 1.5;
     margin-right: 25px;
+    margin-bottom: 10px;
 }
 
 .lightText {
@@ -64,6 +66,7 @@ h2 span {
     text-align: left;
     line-height: 1.75;
     margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .resumeButton {
@@ -95,18 +98,6 @@ h2 span {
 
 // portfolio section styling begins
 
-#portfolio img {
-    width: 100%;
-    max-width: 500px;
-    overflow: hidden;
-    margin: 0 auto;
-    padding-top: 25px;
-}
-
-.links {
-    text-align: center;
-}
-
 h3 {
     @include fontSize(30);
     font-weight: 700;
@@ -115,39 +106,47 @@ h3 {
     text-align: center;
 }
 
-div.project p {
-    line-height: 20px;
-    letter-spacing: 0.5px;
-    font-size: 14px;
+#portfolio img {
+    width: 100%;
+    max-width: 750px;
+    max-height: 400px;
+    overflow: hidden;
 }
 
-// .myWork {
-//     display: flex;
-// }
+.projectText {
+    max-width: 60%;
+    margin: 0 auto;
+}
 
-// .column1 {
-//     margin-right: 10vw;
-// }
+.carousel p {
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    @include fontSize(12);
+}
 
-// #tacoBoutIt {
-//     margin-top: 60vh;
-// }
+.carousel-cell {
+    text-align: center;
+    width: 100%;
+    height: 90vh;
+    // margin-right: 25px;
+}
 
-// .right, 
-// .left {
-//     text-align: center;
-// }
+button.flickity-button {
+    background: transparent;
+}
 
-// #astroAtlas {
-//     margin-bottom: 25vh;
-//         &:hover {
-//             cursor: url("../images/meteorIcon.png"), auto;
-//         }
-// }
+button.flickity-prev-next-button {
+    width: 75px;
+    height: 75px;
+}
 
-// // #astroAtlas .right:hover {
-// //     cursor: url("../images/meteorIcon.png)") 20 20, auto;
-// // }
+svg.flickity-button-icon {
+    fill: $gold;
+}
+
+.flickity-page-dots {
+    bottom: 0;
+}
 
 // portfolio section styling ends
 
@@ -164,7 +163,7 @@ h4 {
     text-transform: uppercase;
     letter-spacing: 3px;
     font-weight: 400;
-    color: $alternateGrey;
+    color: $black;
 }
 
 h5 {
@@ -334,6 +333,19 @@ a.live {
 
 // media queries
 
+@media screen and (max-width: 1050px) {
+    #portfolio img {
+        width: 75%;
+        max-width: 600px;
+        overflow: hidden;
+    }
+
+    .carousel-cell {
+        height: 100vh;
+    }
+
+}
+
 @media screen and (max-width: 1000px) {
     form {
         width: 50vw;
@@ -353,17 +365,52 @@ a.live {
 @media screen and (max-width: 600px) {
     form {
         flex-direction: column;
+        width: 85vw;
     }
 
     .input {
         width: 100%;
     }
-}
 
+    button.flickity-prev-next-button {
+        width: 40px;
+        height: 40px;
+    }
 
-@media screen and (max-width: 600px) {
-    form {
-        width: 85vw;
+    .topInfo {
+        padding-top: 40vh;
     }
 }
+
+@media screen and (max-width: 450px) {
+    .projectText {
+        max-width: 65%;
+        text-align: center;
+    }
+
+    div.links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    a.live,
+    a.git {
+        color: $gold;
+        letter-spacing: 1px;
+        border: none;
+        @include fontSize(14);
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }  
+
+    h3 {
+        @include fontSize(20);
+        letter-spacing: 1px;
+    }
+}
+
+
+
 

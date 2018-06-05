@@ -10,10 +10,9 @@
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
         crossorigin="anonymous">
-    <!-- fonts/stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <!-- logo - favicon -->
     <link type="image/png" href="images/LPH/favicon.png" rel="icon">
-    <!-- logo - favicon -->
     <title>Lindsay Power-Harding: Portfolio</title>
 </head>
 <body>
@@ -43,13 +42,13 @@
             <nav class="overlayMenu">
                 <ul>
                     <li>
-                        <a href="#about" class="nav">About</a>
+                        <a href="#about" class="nav toggleOff">About</a>
                     </li>
                     <li>
-                        <a href="#portfolio" class="nav">Portfolio</a>
+                        <a href="#portfolio" class="nav toggleOff">Portfolio</a>
                     </li>
                     <li>
-                        <a href="#contact" class="nav">Contact</a>
+                        <a href="#contact" class="nav toggleOff">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -134,7 +133,7 @@
                     </div>
                 </div>
                 <div class="resumeButton">
-                    <a href="#" class="resume">Download Resume</a>
+                    <a href="images/Lindsay_PowerHarding_resume.pdf" class="resume" target="_blank">View Resume</a>
                 </div>
             </div>
             <!-- end of aboutMe div -->
@@ -148,82 +147,52 @@
                 <br>
                 <br> Portfolio
             </h2>
-            <div class="myWork wrapper">
-                <div class="column1">
-                    <div class="project dontWantToTacoBoutIt" id="tacoBoutIt">
-                        <div class="left">
-                            <a href="https://kweensofcode.github.io/HY-Project4/" target="_blank ">
-                            <img src="images/Tacoboutit.png" alt="Preview of I Don't Wanna Taco 'Bout It Project'">
-                            </a>
+            <div class="carousel wrapper" data-flickity='{ "autoPlay": true }'>
+                <div class="carousel-cell dontWantToTacoBoutIt" id="tacoBoutIt">
+                    <img src="images/Tacoboutit.png" alt="Preview of I Don't Wanna Taco 'Bout It Project'">
+                    <div class="projectText">
+                        <h3>I Don't Wanna Taco 'Bout It</h3>
+                        <div class="links">
+                            <a href="https://kweensofcode.github.io/HY-Project4/" target="_blank " class="live">View Live</a>
+                            <a href="https://github.com/lindsph/HY-Project4" target="_blank " class="git">View Code</a>
                         </div>
-                        <!-- end of div.left -->
-                        <div class="right">
-                            <div class="projectText">
-                                <h3>I Don't Wanna Taco 'Bout It</h3>
-                                <div class="links">
-                                    <a href="https://kweensofcode.github.io/HY-Project4/" target="_blank " class="live">View Live</a>
-                                    <a href="https://github.com/lindsph/HY-Project4" target="_blank " class="git">View on GitHub</a>
-                                </div>
-                                <!-- end of div.links -->
-                                <p>I Don't Wanna Taco 'Bout It uses the Dandelion API for Semantic Text Analysis of the user's responses and the Zomato API to provide restaurant recommendations. It considers the user's cumulative sentiment score to present the user with recommendations of Mexican restaurants within a specific price range in a specific locality.</p>
-                                <p>Pair Programming / HTML / CSS / JavaScript</p>
-                            </div>
-                            <!-- end of div.projectText -->
-                        </div>
-                        <!-- end of div.right -->
+                        <!-- end of div.links -->
+                        <p>I Don't Wanna Taco 'Bout It uses the Dandelion API for Semantic Text Analysis of the user's responses and the Zomato API to provide restaurant recommendations. It considers the user's cumulative sentiment score to present the user with recommendations of Mexican restaurants within a specific price range in a specific locality.</p>
+                        <p>Pair Programming / HTML / CSS / JavaScript</p>
                     </div>
-                    <!-- end of div.dontWantToTacoBoutIt -->
+                    <!-- end of div.projectText -->
                 </div>
-                <!-- end of div.column1 -->
-                <div class="column2">
-                    <div class="project astroAtlas" id="astroAtlas">
-                            <div class="right">
-                                <a href="https://astroatlas-c22d6.firebaseapp.com/" target="_blank ">
-                                    <img src="images/AstroAltas.png" alt="Preview of AstroAtlas Project">
-                                </a>
-                            </div>
-                            <!-- end of div.right -->
-                            <div class="left">
-                                <div class="projectText">
-                                    <h3>Astro Atlas</h3>
-                                    <div class="links">
-                                        <a href="https://astroatlas-c22d6.firebaseapp.com/" target="_blank " class="live">View Live</a>
-                                        <a href="https://github.com/HY-MeteorLandings/AstroAtlas" target="_blank " class="git">View on GitHub</a>
-                                    </div>
-                                    <!-- end of div.links -->
-                                    <p>Astro Atlas is a group project which required the 3 of us to collaborate through Github. Working from the brief, we utilized the NASA Meteorite API to map meteor landings using Mapbox.</p>
-                                    <p>Team Programming / JavaScript / React</p>
-                                </div>
-                                <!-- end of div.projectText -->
-                            </div>
-                            <!-- end of div.left -->
-                    </div>
-                    <!-- end of div.astroAtlas -->
-                    <div class="project simpleFlex" id="simplePSD">
-                        <div class="left">
-                            <a href="http://lindsaypowerharding.com/simpleflex/" target="_blank ">
-                                <img src="images/SimpleFlex.png" alt="Preview of SimpleFlex Project">
-                            </a>
+                <!-- end of div.dontWantToTacoBoutIt -->
+                <div class="carousel-cell astroAtlas" id="astroAtlas">
+                    <img src="images/AstroAltas.png" alt="Preview of AstroAtlas Project">
+                    <div class="projectText">
+                        <h3>Astro Atlas</h3>
+                        <div class="links">
+                            <a href="https://astroatlas-c22d6.firebaseapp.com/" target="_blank " class="live">View Live</a>
+                            <a href="https://github.com/HY-MeteorLandings/AstroAtlas" target="_blank " class="git">View Code</a>
                         </div>
-                        <!-- end of div.left -->
-                        <div class="right">
-                            <div class="projectText">
-                                <h3>PSD Conversion</h3>
-                                <div class="links">
-                                    <a href="http://lindsaypowerharding.com/simpleflex/" target="_blank " class="live">View Live</a>
-                                    <a href="https://github.com/lindsph/simpleFlex" target="_blank " class="git">View on GitHub</a>
-                                </div>
-                                <!-- end of div.links -->
-                                <p>SimpleFlex is a fully responsive PSD conversion of a corporate website.</p>
-                                <p>HTML / CSS / jQuery / Responsive Design</p>
-                            </div>
-                            <!-- end of div.projectText -->
-                        </div>
-                        <!-- end of div.right -->
+                        <!-- end of div.links -->
+                        <p>Astro Atlas is a group project which required the 3 of us to collaborate through Github. Working from the brief, we utilized the NASA Meteorite API to map meteor landings using Mapbox.</p>
+                        <p>Team Programming / JavaScript / React</p>
                     </div>
-                    <!-- end of div.simpleFlex -->
+                    <!-- end of div.projectText -->
                 </div>
-                <!-- end of div.column2 -->
+                <!-- end of div.astroAtlas -->
+                <div class="carousel-cell simpleFlex" id="simplePSD">
+                    <img src="images/SimpleFlex.png" alt="Preview of SimpleFlex Project">
+                    <div class="projectText">
+                        <h3>PSD Conversion</h3>
+                        <div class="links">
+                            <a href="http://lindsaypowerharding.com/simpleflex/" target="_blank " class="live">View Live</a>
+                            <a href="https://github.com/lindsph/simpleFlex" target="_blank " class="git">View Code</a>
+                        </div>
+                        <!-- end of div.links -->
+                        <p>SimpleFlex is a fully responsive PSD conversion of a corporatewebsite.</p>
+                        <p>HTML / CSS / jQuery / Responsive Design</p>
+                    </div>
+                    <!-- end of div.projectText -->
+                </div>
+                <!-- end of div.simpleFlex -->
             </div>
             <!-- end of div.myWork -->
         </section>
@@ -278,6 +247,8 @@
     </footer>
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!-- flickity -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <!-- smooth scroll -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
     <!-- typeit -->

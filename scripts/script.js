@@ -11,6 +11,11 @@ $(function() {
         $('#overlay').toggleClass('open');
     });
 
+    $('.toggleOff').on("click", function () {
+        $('#toggle').toggleClass('active');
+        $('#overlay').toggleClass('open');
+    });
+
     $(window).scroll(function () {
         var windowYmax = 100;
         var scrolledY = $(window).scrollTop();
@@ -35,6 +40,7 @@ $(function() {
         .pause(1000)
     // END OF TYPE-IT FUNCTION
 
+    // for form
     let $input;
 
     function onInputFocus(event) {
@@ -67,10 +73,19 @@ $(function() {
     });
     // end of form 
 
+    // grey trailing background
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
-        $(".diagonal-bg svg line").attr("stroke-width", ((30 + scroll / 50) + "%"));
+        $(".diagonal-bg svg line").attr("stroke-width", ((30 + scroll / 45) + "%"));
         //30 is the starting width
         //alter the amount of growth by changing scroll/x
+    });
+    // grey trailing background
+
+    // flickity
+    $('.main-carousel').flickity({
+        // options
+        cellAlign: 'left',
+        contain: true
     });
 });
