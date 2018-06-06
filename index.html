@@ -25,17 +25,17 @@
                 <line x1='100%' y1='0' x2='1' y2='100%' stroke='#F3f3f3' stroke-width='30%' />
             </svg>
         </div>
+        <div class="buttonContainer" id="toggle">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+        </div>
+        <!-- end of div.buttonContainer -->
         <div class="navigation">
             <div class="logo">
                 <img src="images/LPH/LPH_logo-gold.png" alt="Lindsay Power-Harding Logo" class="lph">
             </div>
             <!-- end of div.logo -->
-            <div class="buttonContainer" id="toggle">
-                <span class="top"></span>
-                <span class="middle"></span>
-                <span class="bottom"></span>
-            </div>
-            <!-- end of div.buttonContainer -->
         </div>
         <!-- end of div.stickyHeader -->
         <div class="overlay" id="overlay">
@@ -149,7 +149,7 @@
             </h2>
             <div class="carousel wrapper" data-flickity='{ "autoPlay": true }'>
                 <div class="carousel-cell dontWantToTacoBoutIt" id="tacoBoutIt">
-                    <img src="images/Tacoboutit.png" alt="Preview of I Don't Wanna Taco 'Bout It Project'">
+                    <img src="images/TacoBoutIt.png" alt="Preview of I Don't Wanna Taco 'Bout It Project'">
                     <div class="projectText">
                         <h3>I Don't Wanna Taco 'Bout It</h3>
                         <div class="links">
@@ -212,24 +212,24 @@
             <div class="contactForm">
                 <form action="https://formspree.io/hello@lindsaypowerharding.com" method="POST">
                     <span class="input">
-                        <input type="text" class="inputField" id="name" required>
+                        <input type="text" class="inputField" id="name" name="name" required>
                         <label for="name" class="inputLabel">
                             <span class="inputLabel-content">Name</span>
                         </label>
                     </span>
                     <span class="input">
-                        <input type="email" class="inputField" id="email" required>
+                        <input type="email" class="inputField" id="email" name="_replyto" required>
                         <label for="email" class="inputLabel">
                             <span class="inputLabel-content">Email</span>
                         </label>
                     </span>
                     <span class="input message">
-                        <textarea id="message" class="inputField"></textarea>
+                        <textarea id="message" class="inputField" name="message"></textarea>
                         <label for="message" class="inputLabel">
                             <span class="inputLabel-content">Your Message</span>
                         </label>
                     </span>
-                    <button id="sendButton" class="sendMessage">Send Message</button>
+                    <input type="submit" value="Send" class="sendMessage">
                 </form>
             </div>
             <!-- end of div.contactForm -->

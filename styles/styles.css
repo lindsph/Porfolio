@@ -296,6 +296,7 @@ span.bold {
   left: 2%; }
 
 .buttonContainer {
+  padding: 5px;
   position: fixed;
   top: 7%;
   right: 2%;
@@ -562,8 +563,8 @@ h2 span {
   display: flex; }
 
 .boldText {
-  font-size: 20px;
-  font-size: 2rem;
+  font-size: 17px;
+  font-size: 1.7rem;
   font-weight: 500;
   text-align: right;
   line-height: 1.5;
@@ -868,7 +869,13 @@ a.live {
   .topInfo {
     padding-top: 40vh; } }
 
+@media screen and (max-width: 400px) {
+  .topInfo {
+    padding-top: 30vh; } }
+
 @media screen and (max-width: 450px) {
+  #portfolio img {
+    width: 100%; }
   .projectText {
     max-width: 65%;
     text-align: center; }
@@ -897,3 +904,9 @@ a.live {
     font-size: 20px;
     font-size: 2rem;
     letter-spacing: 1px; } }
+
+@media screen and (max-width: 325px) {
+  .arrows {
+    left: 43vw; }
+  .skillsItem {
+    margin-right: 10px; } }
