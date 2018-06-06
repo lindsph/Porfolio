@@ -367,6 +367,31 @@ a.live {
         width: 85vw;
     }
 
+    .carousel-cell {
+        height: 75vh;
+    }
+
+    p.hide {
+        display: none;
+    }
+
+    div.links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    a.live,
+    a.git {
+        color: $gold;
+        letter-spacing: 1.5px;
+        border: none;
+        @include fontSize(14);
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }  
+
     .input {
         width: 100%;
     }
@@ -397,23 +422,6 @@ a.live {
         max-width: 65%;
         text-align: center;
     }
-
-    div.links {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    a.live,
-    a.git {
-        color: $gold;
-        letter-spacing: 1px;
-        border: none;
-        @include fontSize(14);
-        text-align: center;
-        padding: 0;
-        margin: 0;
-    }  
 
     h3 {
         @include fontSize(20);

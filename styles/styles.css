@@ -861,6 +861,31 @@ a.live {
     -ms-flex-direction: column;
     flex-direction: column;
     width: 85vw; }
+  .carousel-cell {
+    height: 75vh; }
+  p.hide {
+    display: none; }
+  div.links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  a.live,
+  a.git {
+    color: #e29e29;
+    letter-spacing: 1.5px;
+    border: none;
+    font-size: 14px;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 0;
+    margin: 0; }
   .input {
     width: 100%; }
   button.flickity-prev-next-button {
@@ -879,27 +904,6 @@ a.live {
   .projectText {
     max-width: 65%;
     text-align: center; }
-  div.links {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
-  a.live,
-  a.git {
-    color: #e29e29;
-    letter-spacing: 1px;
-    border: none;
-    font-size: 14px;
-    font-size: 1.4rem;
-    text-align: center;
-    padding: 0;
-    margin: 0; }
   h3 {
     font-size: 20px;
     font-size: 2rem;
